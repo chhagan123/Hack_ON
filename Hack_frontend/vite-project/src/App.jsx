@@ -8,6 +8,7 @@ import CodeBackground from "./components/CodeBackground";
 // import Contact from "./pages/Contact";
 // import Sponsor from "./pages/Sponsor";
 // import Admin from "./pages/Admin";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/sponsor" element={<Sponsor />} />
         <Route path="/admin" element={<Admin />} /> */}
       </Routes>
+      <Footer/>
     </>
   );
 }

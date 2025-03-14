@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-gray-900 text-white shadow-lg fixed w-full top-0 ">
+ <nav   className="border-4 text-white border-gray-300 p-2 rounded-lg m-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -60,7 +60,7 @@ const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-gray-800 text-white space-y-4 p-4"
+          className="md:hidden bg-transparent text-white space-y-4 p-4"
         >
           {navLinks.map((link, index) => (
             <Link

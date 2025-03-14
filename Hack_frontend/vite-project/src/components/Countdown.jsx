@@ -25,9 +25,11 @@ const Countdown = () => {
   }, [targetDate]);
 
   return (
-    <div className="w-full text-white bg-transparent min-h-screen">
+    <div className="w-full text-white bg-transparent min-h-auto">
+   
       {/* Added margin-top to position it below the navbar */}
       <div className="mt-20 flex flex-col items-center text-center">
+    
         {/* Heading */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-wide text-white mb-4">
           TECHKRUTI 2K25
@@ -35,6 +37,8 @@ const Countdown = () => {
         <h5 className="text-lg sm:text-2xl md:text-3xl font-semibold tracking-wide text-white mb-6">
           Organized by CSE (Data Science) Department, TGPCET
         </h5>
+
+        <h1 className="text-lg pb-4  sm:text-2xl md:text-3xl font-semibold " >COUNTDOWN</h1>
 
         {/* Countdown Timer */}
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-yellow-400">
