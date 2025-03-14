@@ -41,9 +41,10 @@ const Countdown = () => {
         <h1 className="text-lg pb-4  sm:text-2xl md:text-3xl font-semibold " >COUNTDOWN</h1>
 
         {/* Countdown Timer */}
-        <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-yellow-400">
-          {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m : {timeLeft.seconds}s
-        </h2>
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-yellow-400 bg-transparent px-6 py-4 rounded-lg border-4 border-yellow-500 shadow-lg">
+  {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m : {timeLeft.seconds}s
+</h2>
+
       </div>
     </div>
   );
