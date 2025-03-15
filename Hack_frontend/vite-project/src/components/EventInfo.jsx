@@ -11,15 +11,15 @@ const events = [
       {
         heading: "About the Event",
         description: [
-          "🚀 What is Hackathon Name?",
-          "Hackathon Name is an exciting duration-hour coding marathon where innovators, developers, designers, and problem-solvers come together to build impactful solutions in a collaborative environment.",
+          "🚀 What is Hackathon Techverse?",
+          "Hackathon Techverse is a 7-hour coding marathon where innovators, developers, designers, and problem-solvers collaborate to build impactful solutions.",
           "",
           "💡 Why Participate?",
           "- Solve real-world problems with cutting-edge technology",
-          "- Work in teams and showcase your problem-solving skills",
+          "- Work in teams and showcase problem-solving skills",
           "- Gain mentorship from industry experts",
           "- Win exciting prizes and recognition",
-          "- Network with like-minded tech enthusiasts and potential recruiters"
+          "- Network with like-minded tech enthusiasts"
         ]
       }
     ],
@@ -29,75 +29,184 @@ const events = [
       "Exciting Prizes & Recognition",
       "Innovative Challenges",
       "Networking Opportunities",
-      "Unleash Your Potential"
+      "7 hours non stop coding"
     ],
     contacts: [
-      { name: "Web Craft Team", phone: "+91 9975661769" },
-      { name: "Web Craft Team", phone: "+91 9712935674" }
+      { name: "Techverse Team", phone: "+91 9158396794" },
+      { name: "Techverse Team", phone: "+91 8485029972" }
     ]
-  }
+  },
+
+  {
+    id: 2,
+    title: "E-Sports Championship",
+    subtitle: "Battle in top-tier gaming tournaments featuring Valorant, BGMI, and Free Fire.",
+    date: "29 March, 2025",
+    about: [
+      {
+        heading: "About the Event",
+        description: [
+          "🎮 What is the E-Sports Championship?",
+          "The E-Sports Championship brings together gaming enthusiasts for the ultimate competitive showdown, featuring the most popular battle royale and FPS games!",
+          "",
+          "🔥 Why Participate?",
+          "- Compete in high-stakes tournaments with skilled players",
+          "- Play your favorite games: Valorant, BGMI, and Free Fire",
+          "- Win cash prizes, exclusive in-game rewards, and trophies",
+          "- Experience a thrilling gaming atmosphere with live commentary",
+          "- Meet and connect with pro gamers and gaming influencers"
+        ]
+      }
+    ],
+    highlights: [
+      "Thrilling Battle Royale & FPS Matches",
+      "Cash Prizes & Gaming Rewards",
+      "Live Streaming & Commentary",
+      "Squad & Solo Mode Competitions",
+      "Intense Showdowns with Pro Gamers",
+      "Ultimate Gaming Experience"
+    ],
+    contacts: [
+      { name: "E-Sports Team", phone: "+91 9158396794" },
+      { name: "E-Sports Team", phone: "+91 8485029972" }
+    ]
+  },
+  {
+    id: 3,
+    title: "Project Expo",
+    subtitle: "Showcase Your Innovative Projects to Industry Experts",
+    date: "30 March, 2025",
+    about: [
+      {
+        heading: "About the Event",
+        description: [
+          "🎯 What is Project Expo?",
+          "Project Expo is an exhibition of innovative student projects across various disciplines. It provides a platform for students to showcase their technical and creative skills.",
+          "",
+          "🔍 Why Participate?",
+          "- Get your project evaluated by industry experts",
+          "- Gain feedback and mentorship for improvement",
+          "- Win prizes and recognition for outstanding innovations",
+          "- Build networking opportunities with professionals and investors",
+        ],
+      },
+    ],
+    highlights: [
+      "Innovative Project Showcase",
+      "Industry Expert Evaluation",
+      "Networking with Professionals",
+      "Exciting Prizes for Best Projects",
+      "Hands-on Feedback & Mentorship",
+    ],
+    contacts: [
+      { name: "Expo Team", phone: "+91 9876543210" },
+      { name: "Expo Team", phone: "+91 9123456789" },
+    ],
+  },
+  {
+    id: 4,
+    title: "AI/ML Debate",
+    subtitle: "Discuss the Future of AI & Machine Learning",
+    date: "31 March, 2025",
+    about: [
+      {
+        heading: "About the Event",
+        description: [
+          "🧠 What is AI/ML Debate?",
+          "The AI/ML Debate is a competitive discussion where experts, students, and enthusiasts share insights on the future of AI, ethics, and its impact on industries.",
+          "",
+          "🤔 Why Participate?",
+          "- Engage in thought-provoking discussions",
+          "- Explore the latest trends and breakthroughs in AI",
+          "- Challenge yourself with logical reasoning and argumentation",
+          "- Get recognized for your analytical and debating skills",
+        ],
+      },
+    ],
+    highlights: [
+      "Industry Expert Panel",
+      "Debate on AI's Ethical Concerns",
+      "Latest AI/ML Trends Discussion",
+      "Recognition for Best Debaters",
+      "Certificate of Participation",
+    ],
+    contacts: [
+      { name: "Debate Team", phone: "+91 9988776655" },
+      { name: "Debate Team", phone: "+91 8877665544" },
+    ],
+  },
 ];
 
 const EventInfo = () => {
   const { id } = useParams();
-  const event = events.find(event => event.id === parseInt(id));
+  const event = events.find((event) => event.id === parseInt(id));
 
   if (!event) {
     return <h2 className="text-center text-white">Event not found</h2>;
   }
 
   return (
-    <div className="text-white min-h-screen px-4 py-6 flex flex-col items-center">
-      <div className="w-full max-w-4xl flex flex-col items-center">
+    <div className="text-white min-h-screen px-6 py-8 flex flex-col items-center bg-transparent">
+      <div className="w-full max-w-5xl flex flex-col items-center">
+
         {/* Event Title */}
         <div className="text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[3.5rem] font-bold tracking-[3px] uppercase bg-gradient-to-r from-teal-400 via-blue-500 to-teal-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-wide uppercase bg-gradient-to-r from-teal-300 via-blue-500 to-purple-400 bg-clip-text text-transparent drop-shadow-lg">
             {event.title}
           </h1>
-          <p className="mt-2 text-sm sm:text-lg">{event.subtitle}</p>
-          <p className="mt-2 text-sm sm:text-base font-semibold">
-            Date: <span className="text-white">{event.date}</span>
+          <p className="mt-3 text-lg sm:text-xl text-gray-300">{event.subtitle}</p>
+          <p className="mt-2 text-base sm:text-lg font-semibold text-blue-300">
+            📅 Date: <span className="text-white">{event.date}</span>
           </p>
         </div>
 
         {/* About Section */}
-        <div className="max-w-3xl text-center mt-6 sm:mt-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-blue-400">About the Event</h2>
-          {event.about.map((section, index) => (
-            <div key={index}>
-              {section.description.map((line, i) => (
-                <p key={i} className="mt-3 text-sm sm:text-base text-gray-300">{line}</p>
-              ))}
-            </div>
-          ))}
+        <div className="max-w-3xl text-center mt-8 sm:mt-10 px-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-blue-400 glow-effect">About the Event</h2>
+          <div className="mt-4 space-y-4">
+            {event.about.map((section, index) => (
+              <div key={index}>
+                {section.description.map((line, i) => (
+                  <p key={i} className="text-base sm:text-lg text-gray-300">{line}</p>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Register Button */}
         <div className="flex justify-center w-full">
-          <button className="mt-6 bg-gradient-to-r from-cyan-400 to-blue-600 px-5 py-3 text-sm sm:text-base text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform w-full sm:w-auto">
-            Register Now
+          <button className="mt-8 bg-gradient-to-r from-cyan-400 to-blue-600 px-6 py-3 text-lg font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-200 hover:shadow-blue-500/50">
+            🚀 Register Now
           </button>
         </div>
 
         {/* Key Highlights */}
-        <div className="mt-10 sm:mt-16 w-full">
-          <h2 className="text-2xl sm:text-3xl font-bold text-blue-400 text-center">Key Highlights</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 text-center">
+        <div className="mt-12 sm:mt-16 w-full">
+          <h2 className="text-3xl sm:text-4xl font-bold text-blue-400 text-center glow-effect">Key Highlights</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 text-center">
             {event.highlights.map((highlight, index) => (
-              <div key={index} className="p-4 border border-gray-700 rounded-lg">{highlight}</div>
+              <div
+                key={index}
+                className="p-5 border border-gray-700 rounded-lg shadow-md hover:shadow-blue-500/50 transition-shadow duration-300 bg-gray-900 bg-opacity-50 backdrop-blur-lg"
+              >
+                <p className="text-lg font-semibold">{highlight}</p>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Contact Section */}
-        <div className="mt-10 sm:mt-16 text-center w-full">
-          <h2 className="text-2xl sm:text-3xl font-bold text-blue-400">Contact Us</h2>
-          <p className="mt-2 text-sm sm:text-base">For any inquiries or further details, please contact:</p>
-          {event.contacts.map((contact, index) => (
-            <p key={index} className="mt-2 font-semibold text-sm sm:text-base">
-              {contact.name}: {contact.phone}
-            </p>
-          ))}
+        <div className="mt-12 sm:mt-16 text-center w-full">
+          <h2 className="text-3xl sm:text-4xl font-bold text-blue-400 glow-effect">Contact Us</h2>
+          <p className="mt-3 text-lg text-gray-300">For inquiries, please contact:</p>
+          <div className="mt-3 space-y-2">
+            {event.contacts.map((contact, index) => (
+              <p key={index} className="text-lg font-semibold">
+                📞 {contact.name}: <span className="text-blue-300">{contact.phone}</span>
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

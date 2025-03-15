@@ -1,109 +1,77 @@
 import { motion } from "framer-motion";
 import React from "react";
-const Aboute = () => {
+
+const About = () => {
   return (
     <div className="bg-transparent bg-cover bg-center min-h-screen flex flex-col items-center text-gray-900 py-12 px-6 md:px-12 lg:px-24">
-      {/* College Intro */}
+      {/* Event Introduction */}
       <motion.div
-        className="text-center mb-12 backdrop-blur-lg bg-transparent
-         p-8 rounded-2xl shadow-lg border border-white/30"
+        className="text-center mb-12 backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-xl border border-white/30"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
-          About Tulsiramji Gaikwad-Patil College of Engineering & Technology
+        <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500 drop-shadow-lg uppercase">
+          Welcome to <span className="text-blue-500">TECHKRUTI 2025</span>
         </h1>
-        <p className="mt-4 text-lg text-white/80 max-w-3xl mx-auto">
-          Tulsiramji Gaikwad-Patil College of Engineering & Technology (TGPCET)
-          is a leading institution fostering **engineering excellence,
-          innovation, and professional growth**. With **world-class infrastructure
-          and industry-driven programs**, we prepare students for a successful future
-          in technology.
+        <p className="mt-4 text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+          TECHKRUTI is the **premier tech fest** of Tulsiramji Gaikwad-Patil College of Engineering & Technology, organized by the **CSE & Data Science Department**. It unites innovators, tech enthusiasts, and gamers for an **unforgettable** experience of knowledge, competition, and futuristic technology.
         </p>
       </motion.div>
 
-      {/* Department Section */}
+      {/* Competitions Section */}
       <motion.div
-        className="w-full max-w-4xl backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-lg border border-white/30"
+        className="w-full max-w-4xl backdrop-blur-lg bg-white/10 p-10 rounded-2xl shadow-xl border border-white/30"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-        <h2 className="text-3xl font-bold text-white drop-shadow-lg">
-          Department of [Your Department Name]
-        </h2>
-        <p className="mt-3 text-white/80">
-          Our **[Computer Science, IT, AI & DS, etc.]** department focuses on
-          **cutting-edge research, hands-on learning, and industry collaborations**.
-          We emphasize practical exposure to emerging technologies, shaping students
-          into **industry-ready professionals**.
-        </p>
-
-        <ul className="mt-4 text-white/80 list-disc pl-6">
-          <li>🔹 Advanced labs & research centers</li>
-          <li>🔹 Industry-relevant curriculum & workshops</li>
-          <li>🔹 Internships & placement assistance</li>
-          <li>🔹 Student innovation clubs & hackathons</li>
+        <h2 className="text-4xl font-bold text-white drop-shadow-lg">Major Competitions</h2>
+        <ul className="mt-6 text-white/90 list-disc pl-8 space-y-4 text-lg">
+          <li>🔥 <span className="font-semibold">8-Hour National Hackathon</span> - Solve real-world tech challenges under time constraints.</li>
+          <li>🎮 <span className="font-semibold">E-Sports Tournament</span> - Compete in <span className="text-yellow-400">PUBG, Free Fire, Valorant, and BGMI</span> to claim the championship.</li>
+          <li>🚀 <span className="font-semibold">Project Expo</span> - Exhibit your **groundbreaking projects** and innovative ideas.</li>
+          <li>🤖 <span className="font-semibold">AI vs Human Debate</span> - A thrilling intellectual showdown between **human logic and AI intelligence**.</li>
         </ul>
       </motion.div>
 
-      {/* Vision & Mission */}
+      {/* Detailed Hackathon Information */}
       <motion.div
-        className="mt-12 w-full max-w-4xl backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-lg border border-white/30"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.5 }}
-      >
-        <h2 className="text-3xl font-bold text-white drop-shadow-lg">Vision & Mission</h2>
-        <p className="mt-3 text-white/80">
-          🔹 **Vision:** To establish a **center of excellence** in engineering
-          education, fostering **technological innovation and leadership**.
-        </p>
-        <p className="mt-2 text-white/80">
-          🔹 **Mission:** To create a **dynamic learning environment** that prepares
-          students with **technical expertise, ethical values, and leadership skills**.
-        </p>
-      </motion.div>
-
-      {/* Why Participate? */}
-      <motion.div
-        className="mt-12 w-full max-w-4xl backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-lg border border-white/30"
+        className="mt-12 w-full max-w-4xl backdrop-blur-lg bg-white/10 p-10 rounded-2xl shadow-xl border border-white/30"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.7 }}
       >
-        <h2 className="text-3xl font-bold text-white drop-shadow-lg">
-          Why Participate in Techverse?
-        </h2>
-        <ul className="mt-4 text-white/80 list-disc pl-6">
-          <li>✅ **Compete in national-level coding, gaming & innovation contests**</li>
-          <li>✅ **Network with tech leaders, mentors, and fellow innovators**</li>
-          <li>✅ **Showcase your talents & win exciting prizes**</li>
-          <li>✅ **Gain hands-on experience with real-world challenges**</li>
+        <h2 className="text-4xl font-bold text-white drop-shadow-lg">Hackathon: Code Your Future</h2>
+        <p className="mt-6 text-white/90 text-lg leading-relaxed">
+          The **8-Hour National Hackathon** challenges participants to develop innovative tech solutions within a limited timeframe. Compete in teams to build software, AI models, or automation tools that address real-world problems.
+        </p>
+        <ul className="mt-6 text-white/90 list-disc pl-8 space-y-4 text-lg">
+          <li>💡 **Theme-Based Problem Statements** - Solve pressing industry challenges with creativity and skill.</li>
+          <li>🛠 **Tech Stack Freedom** - Use **React, Python, Firebase, AI/ML, Blockchain, and more**.</li>
+          <li>🏆 **Attractive Prizes** - Cash rewards, internships, and mentorship opportunities.</li>
+          <li>🌍 **Networking & Learning** - Collaborate with experts, developers, and startup founders.</li>
         </ul>
       </motion.div>
 
-      {/* Achievements */}
+      {/* Why Participate? */}
       <motion.div
-        className="mt-12 w-full max-w-4xl backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-lg border border-white/30"
+        className="mt-12 w-full max-w-4xl backdrop-blur-lg bg-white/10 p-10 rounded-2xl shadow-xl border border-white/30"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
       >
-        <h2 className="text-3xl font-bold text-white drop-shadow-lg">Our Achievements</h2>
-        <ul className="mt-4 text-white/80 list-disc pl-6">
-          <li>🏆 Recognized as a **leading institution in engineering education**</li>
-          <li>📜 Multiple **research papers, hackathon victories & innovative projects**</li>
-          <li>🚀 Alumni placed in **top MNCs, startups & research institutions**</li>
-          <li>🤝 Strong **industry collaborations & MoUs for student growth**</li>
+        <h2 className="text-4xl font-bold text-white drop-shadow-lg">Why Join TECHKRUTI?</h2>
+        <ul className="mt-6 text-white/90 list-disc pl-8 space-y-4 text-lg">
+          <li>✅ **Compete against top minds in gaming and innovation**.</li>
+          <li>✅ **Gain hands-on experience with real-world tech challenges**.</li>
+          <li>✅ **Win exciting prizes, industry recognition, and internship opportunities**.</li>
+          <li>✅ **Network with industry leaders, mentors, and fellow enthusiasts**.</li>
+          <li>✅ **Be part of an electrifying atmosphere of innovation and gaming excellence!**</li>
         </ul>
       </motion.div>
-
-      {/* Call to Action */}
-      
     </div>
   );
 };
 
-export default Aboute;
+export default About;
