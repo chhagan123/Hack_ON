@@ -16,11 +16,11 @@ const Navbar = () => {
   ];
 
   return (
- <nav   className="border-4 text-white border-gray-300 p-2 rounded-lg m-8">
+ <nav   className="  shadow-md text-white border-pink-300  rounded-lg m-8 z-60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <h1 className="text-2xl font-bold text-green-400">Techkruti</h1>
+          <h1 className="text-2xl font-bold text-green-400">Techkruti 2k25</h1>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex space-x-6">
