@@ -6,7 +6,7 @@ const events = [
     id: 1,
     title: "Techverse Hackathon",
     subtitle: "A Great Fundraising Opportunity to Showcase Your Talent",
-    date: "29 March, 2025",
+    date: "28 March, 2025",
     about: [
       {
         heading: "About the Event",
@@ -33,7 +33,7 @@ const events = [
     ],
     contacts: [
       { name: "Techverse Team", phone: "+91 9158396794" },
-      { name: "Techverse Team", phone: "+91 8485029972" }
+      { name: "Techverse Team", phone: "+91 9322913858" }
     ]
   },
 
@@ -67,8 +67,8 @@ const events = [
       "Ultimate Gaming Experience"
     ],
     contacts: [
-      { name: "E-Sports Team", phone: "+91 9158396794" },
-      { name: "E-Sports Team", phone: "+91 8485029972" }
+      { name: "E-Sports Team", phone: "+91 70388 36841" },
+      { name: "E-Sports Team", phone: "+91 70388 36841" } 
     ]
   },
   {
@@ -99,8 +99,8 @@ const events = [
       "Hands-on Feedback & Mentorship",
     ],
     contacts: [
-      { name: "Expo Team", phone: "+91 9876543210" },
-      { name: "Expo Team", phone: "+91 9123456789" },
+      { name: "Expo Team", phone: "+91 83293 90262"},
+      { name: "Expo Team", phone: "+91 70775 03311"}
     ],
   },
   {
@@ -131,8 +131,8 @@ const events = [
       "Certificate of Participation",
     ],
     contacts: [
-      { name: "Debate Team", phone: "+91 9988776655" },
-      { name: "Debate Team", phone: "+91 8877665544" },
+      { name: "Debate Team", phone: " +91 81809 62625"},
+      { name: "Debate Team", phone: "+91 8877665544" }
     ],
   },
 ];

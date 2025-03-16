@@ -28,8 +28,8 @@ const About = () => {
       >
         <h2 className="text-4xl font-bold text-white drop-shadow-lg">Major Competitions</h2>
         <ul className="mt-6 text-white/90 list-disc pl-8 space-y-4 text-lg">
-          <li>🔥 <span className="font-semibold">8-Hour National Hackathon</span> - Solve real-world tech challenges under time constraints.</li>
-          <li>🎮 <span className="font-semibold">E-Sports Tournament</span> - Compete in <span className="text-yellow-400">PUBG, Free Fire, Valorant, and BGMI</span> to claim the championship.</li>
+          <li>🔥 <span className="font-semibold">7-Hour National Hackathon</span> - Solve real-world tech challenges under time constraints.</li>
+          <li>🎮 <span className="font-semibold">E-Sports Tournament</span> - Compete in <span className="text-yellow-400">BGMI, Free Fire, Valorant, and BGMI</span> to claim the championship.</li>
           <li>🚀 <span className="font-semibold">Project Expo</span> - Exhibit your **groundbreaking projects** and innovative ideas.</li>
           <li>🤖 <span className="font-semibold">AI vs Human Debate</span> - A thrilling intellectual showdown between **human logic and AI intelligence**.</li>
         </ul>
@@ -44,7 +44,7 @@ const About = () => {
       >
         <h2 className="text-4xl font-bold text-white drop-shadow-lg">Hackathon: Code Your Future</h2>
         <p className="mt-6 text-white/90 text-lg leading-relaxed">
-          The **8-Hour National Hackathon** challenges participants to develop innovative tech solutions within a limited timeframe. Compete in teams to build software, AI models, or automation tools that address real-world problems.
+          The **7-Hour National Hackathon** challenges participants to develop innovative tech solutions within a limited timeframe. Compete in teams to build software, AI models, or automation tools that address real-world problems.
         </p>
         <ul className="mt-6 text-white/90 list-disc pl-8 space-y-4 text-lg">
           <li>💡 **Theme-Based Problem Statements** - Solve pressing industry challenges with creativity and skill.</li>

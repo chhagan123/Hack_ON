@@ -30,8 +30,11 @@ const Countdown = () => {
     <div className="w-full text-white bg-transparent min-h-auto p-6 flex flex-col items-center text-center">
       {/* Header Section */}
       <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-extrabold tracking-[4px] uppercase bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-        TECHKRUTI 2K25
+        NATIONAL LEVEL
       </h1>
+      <h2 className="text-[clamp(1.5rem,4vw,3rem)] font-extrabold tracking-[4px] uppercase bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 bg-clip-text text-transparent">
+        TECHKRUTI 2K25
+      </h2>
       <h5 className="text-[clamp(1.2rem,4vw,1.8rem)] font-semibold my-3 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-400 bg-clip-text text-transparent">
         Organized by CSE (Data Science) Department, TGPCET
       </h5>
