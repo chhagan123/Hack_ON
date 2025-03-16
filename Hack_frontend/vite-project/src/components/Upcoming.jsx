@@ -26,6 +26,7 @@ const events = [
     venue: "Gaming Arena",
     date: "29th March",
     time: "9:00 AM - 6:00 PM",
+    registerLink:"https://docs.google.com/forms/d/e/1FAIpQLSehdgIUjkgNAqpjr8hi2jRJ7VYlwzUq2IUiMEdWIYKsKAJyRw/viewform?usp=dialog"
   },
   {
     id: 3,
@@ -105,12 +106,14 @@ const Upcoming = () => {
               >
                 View Details
               </button>
-              <button
-                className="w-1/2 bg-green-600 text-white text-sm px-4 py-2 rounded-md hover:bg-green-700 transition"
-                onClick={() => navigate(`/apply/${event.id}`)}
+              <a
+                href={event.registerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-1/2 bg-green-600 text-white text-sm px-4 py-2 rounded-md text-center hover:bg-green-700 transition"
               >
                 Register
-              </button>
+              </a>
             </div>
           </div>
         ))}
