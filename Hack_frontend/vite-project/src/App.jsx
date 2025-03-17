@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Event from "./pages/Event";
-import Hackathons from "./pages/Hackthons";
+import Hackathons from "./pages/Hackathons";
 import Loder from "./components/Loder"; // Import Loader
 
 function App() {
