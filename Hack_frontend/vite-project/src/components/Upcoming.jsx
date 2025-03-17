@@ -20,12 +20,12 @@ const events = [
     title: "E-Sports Championship",
     description:
       "Battle in top-tier gaming tournaments featuring Valorant, BGMI, and Free Fire.",
-    img: "esport.jpg",
+    img: "e-sport.jpg",
     fee: "₹200 per squad",
     teamSize: "2-4 members",
     venue: "Gaming Arena",
     date: "29th March",
-    time: "9:00 AM - 6:00 PM",
+    time: "9:00 AM - 4:00 PM",
     registerLink:"https://docs.google.com/forms/d/e/1FAIpQLSehdgIUjkgNAqpjr8hi2jRJ7VYlwzUq2IUiMEdWIYKsKAJyRw/viewform?usp=dialog"
   },
   {
@@ -49,9 +49,20 @@ const events = [
     fee: "₹50 per participant",
     teamSize: "1-2 members",
     venue: "TGPCET campus",
-    date: "29th March",
-    time: "2:00 PM - 5:00 PM",
+    date: "28th March",
+    time: "10:00 PM - 5:00 PM",
   },
+  {
+    id: 5,
+    title: "Meme Battle",
+    description: "Show off your creativity and humor by creating the most hilarious and trending memes.",
+    img: "MemeBattle.jpg",
+    fee: "₹30 per participant",
+    teamSize: "1-2 members",
+    venue: "TGPCET campus",
+    date: "29th March",
+    time: "10:00 AM - 5:00 PM"
+  }
 ];
 
 const Upcoming = () => {
@@ -75,7 +86,7 @@ const Upcoming = () => {
                       hover:shadow-2xl hover:-translate-y-2"
           >
             {/* Event Image */}
-            <div className="w-full h-56 overflow-hidden rounded-lg">
+            <div className="w-full h-70 overflow-hidden rounded-lg">
               <img
                 src={event.img}
                 alt={event.title}
@@ -102,7 +113,7 @@ const Upcoming = () => {
             <div className="mt-5 flex gap-4">
               <button
                 className="w-1/2 bg-purple-600 text-white text-sm px-4 py-2 rounded-md hover:bg-purple-700 transition"
-                onClick={() => navigate(`/event/${event.id}`)}
+                onClick={ () => event.id == 1 ? navigate(`/hackthon`) () :  navigate(`/event/${event.id}`)}
               >
                 View Details
               </button>

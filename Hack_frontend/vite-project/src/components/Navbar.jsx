@@ -9,10 +9,12 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
+    { name: "TechVerse hack", path: "/hackthon" },
     { name: "About", path: "/about" },
     { name: "Contact Us", path: "/contact" },
     { name: "Sponsor", path: "/sponsor" },
     { name: "Admin", path: "/admin" },
+  ,
   ];
 
   return (

@@ -48,7 +48,7 @@ const Countdown = () => {
         {Object.entries(timeLeft).map(([unit, value], index) => (
           <div
             key={index}
-            className="text-white bg-gradient-to-br from-gray-900 to-gray-800 border-[3px] border-purple-500/60 rounded-xl shadow-md shadow-purple-500/50 hover:shadow-lg hover:shadow-purple-500/70 transition-all duration-300 ease-in-out font-extrabold text-[clamp(1rem,3vw,1.5rem)] w-[clamp(80px,15vw,130px)] p-4 text-center"
+            className="text-white bg-gradient-to-br from-gray-900 to-gray-800 border-[3px] border-purple-500/60 overflow-wrap rounded-xl shadow-md shadow-purple-500/50 hover:shadow-lg hover:shadow-purple-500/70 transition-all duration-300 ease-in-out font-extrabold text-[clamp(1rem,3vw,1.5rem)] w-[clamp(80px,15vw,130px)] p-4 text-center"
           >
             <span className="text-[clamp(1.5rem,4vw,2rem)] text-cyan-300">
               {value}

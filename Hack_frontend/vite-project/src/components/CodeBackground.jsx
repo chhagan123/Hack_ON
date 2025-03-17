@@ -49,7 +49,7 @@ const CodeBackground = () => {
       },
       particles: {
         color: {
-          value: "#FFFFFF",
+          value: "#ffffff",
         },
         links: {
           color: "#FFFFFF",
@@ -65,7 +65,7 @@ const CodeBackground = () => {
             default: "bounce",
           },
           random: true,
-          speed: 1,
+          speed: 2,
           straight: false,
         },
         number: {
