@@ -33,7 +33,8 @@ const Footer = () => {
           © 2025 TECHKRUTI. All Rights Reserved.
         </p>
         <p className="text-gray-500 text-xs">
-          Developed by <span className="text-cyan-400 font-semibold">Chhagan Rakhade</span> & <span className="text-cyan-400 font-semibold">Shubham Kopare</span>
+          Developed by <span className="text-cyan-400 font-semibold">Chhagan Rakhade</span> & <span className="text-cyan-400 font-semibold">Shubham Kopare</span><span>&</span>
+          <span className="text-cyan-400 font-semibold">Himanshu Dhenge</span>
         </p>
       </div>
     </footer>
