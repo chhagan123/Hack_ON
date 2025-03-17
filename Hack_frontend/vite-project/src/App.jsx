@@ -17,7 +17,7 @@ function App() {
     // Show the loader for 5-6 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); // Change to 6000 for 6 seconds
+    }, 3000); // Change to 6000 for 6 seconds
 
     return () => clearTimeout(timer);
   }, []);
