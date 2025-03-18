@@ -4,7 +4,7 @@ import Upcoming from "../components/Upcoming";
 
 const Home = () => {
   return <>
-   <div> 
+   <div className="pt-100px"> 
    <Countdown/>
    <Upcoming/>
    </div>

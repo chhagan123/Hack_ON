@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-transparent bg-cover bg-center min-h-screen flex flex-col items-center text-gray-900 py-12 px-6 md:px-12 lg:px-24">
+    <div className="bg-transparent mt-40 bg-cover bg-center min-h-screen flex flex-col items-center text-gray-900 py-12 px-6 md:px-12 lg:px-24">
       {/* Event Introduction */}
       <motion.div
         className="text-center mb-12 backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-xl border border-white/30"
@@ -21,7 +21,7 @@ const About = () => {
 
       {/* Competitions Section */}
       <motion.div
-        className="w-full max-w-4xl backdrop-blur-lg bg-white/10 p-10 rounded-2xl shadow-xl border border-white/30"
+        className="w-full  max-w-4xl backdrop-blur-lg bg-white/10 p-10 rounded-2xl shadow-xl border border-white/30"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}

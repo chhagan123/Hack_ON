@@ -32,8 +32,8 @@ const events = [
       "7 hours non stop coding"
     ],
     contacts: [
-      { name: "Techverse Team", phone: "+91 9158396794" },
-      { name: "Techverse Team", phone: "+91 9322913858" }
+      { name: "Chhagan Rakhade", phone: "+91 9158396794" },
+      { name: "Himanshu dhenge", phone: "+91 9322913858" }
     ]
   },
 
@@ -67,8 +67,8 @@ const events = [
       "Ultimate Gaming Experience"
     ],
     contacts: [
-      { name: "E-Sports Team", phone: "+91 70388 36841" },
-      { name: "E-Sports Team", phone: "+91 70388 36841" } 
+      { name: "Priyanshu Patle", phone: "+91 70388 36841" },
+      { name: "Dishant Janbandhu", phone: "+91 7517938702" } 
     ]
   },
   {
@@ -99,8 +99,8 @@ const events = [
       "Hands-on Feedback & Mentorship",
     ],
     contacts: [
-      { name: "Expo Team", phone: "+91 83293 90262"},
-      { name: "Expo Team", phone: "+91 70775 03311"}
+      { name: "Vishakha ghatole", phone: "8008212898"},
+      { name: "Nidhi Sharnagat", phone: "9021138083"}
     ],
   },
   {
@@ -131,10 +131,45 @@ const events = [
       "Certificate of Participation",
     ],
     contacts: [
-      { name: "Debate Team", phone: " +91 81809 62625"},
-      { name: "Debate Team", phone: "+91 8877665544" }
+      { name: "Devanshi Shingade", phone: " +707750311"},
+      { name: "Nidhi meshram", phone: "+91 8180962625" }
     ],
   },
+  {
+    id: 5,
+    title: "Meme Battle",
+    subtitle: "Unleash Your Creativity with the Funniest Memes",
+    date: "29 March, 2025",
+    about: [
+      {
+        heading: "About the Event",
+        description: [
+          "😂 What is the Meme Battle?",
+          "The Meme Battle is a creative competition where participants craft hilarious and trending memes on tech, college life, pop culture, and more.",
+          "",
+          "🔥 Why Participate?",
+          "- Show off your meme-making skills",
+          "- Compete with fellow meme lords",
+          "- Create viral-worthy content",
+          "- Win prizes and recognition for your humor",
+          "- Have fun and make the audience laugh!"
+        ]
+       
+      }
+    ],
+    highlights: [
+      "Theme-Based Meme Creation",
+      "Live Voting & Audience Reactions",
+      "Best Meme Awards & Prizes",
+      "Social Media Feature for Top Memes",
+      "Certificate of Participation"
+    ],
+    contacts: [
+      { name: "Devanshi Shingade", phone: " +707750311"},
+      { name: "Nidhi meshram", phone: "+91 8180962625" }
+    ],
+  }
+  
 ];
 
 const EventInfo = () => {
@@ -146,7 +181,7 @@ const EventInfo = () => {
   }
 
   return (
-    <div className="text-white min-h-screen px-6 py-8 flex flex-col items-center bg-transparent">
+    <div className="text-white mt-20 in-h-screen px-6 py-8 flex flex-col items-center bg-transparent">
       <div className="w-full max-w-5xl flex flex-col items-center">
 
         {/* Event Title */}

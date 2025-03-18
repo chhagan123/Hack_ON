@@ -1,88 +1,97 @@
-
-import React, { useState } from "react";
-import { Link } from "react-router-dom"; // If using React Router
-import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react"; // Icons for mobile menu
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "TechVerse hack", path: "/hackthon" },
+    { name: "TechVerse Hack", path: "/hackthon" },
     { name: "About", path: "/about" },
     { name: "Contact Us", path: "/contact" },
     { name: "Sponsor", path: "/sponsor" },
-    { name: "Admin", path: "/admin" },
-  ,
   ];
 
+  // Prevent background scrolling when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   return (
- <nav   className="  shadow-md text-white border-pink-300  rounded-lg m-8 z-60">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <>
+      {/* Navbar */}
+      <nav className="fixed h-auto bg-black/90 top-0 left-0 w-full backdrop-blur-md border-b-2 border-cyan-500/30 shadow-xl shadow-cyan-500/20 z-[9999] pb-4">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-4 flex justify-between items-center">
           {/* Logo */}
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 
-               text-transparent bg-clip-text drop-shadow-lg">
-  Techkruti 2K25
-</h1>
-
-
-
-          {/* Desktop Nav */}
-          <div className="hidden md:flex space-x-6">
+          <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">
+            <span className="text-cyan-400 text-3xl font-bold">{'</>'}</span>
+            <h1 className="text-3xl font-extrabold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">
+              Techkruti 2K25
+            </h1>
+          </motion.div>
+        
+           {/* Desktop Nav */}
+          <div className="hidden md:flex space-x-8 items-center">
             {navLinks.map((link, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.1 }}
-                className="relative"
-              >
-                <Link
-                  to={link.path}
-                  className="text-lg hover:text-green-400 transition"
-                >
+              <motion.div key={index} whileHover={{ y: -2 }} className="relative group">
+                <Link to={link.path} className="text-lg text-gray-300 hover:text-cyan-400 transition-all font-medium px-3 py-2">
                   {link.name}
+                  <div className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-cyan-400 group-hover:w-full group-hover:left-0 transition-all duration-300" />
                 </Link>
-                <motion.div
-                  className="absolute left-0 bottom-0 h-1 w-full bg-green-400 origin-left scale-x-0"
-                  whileHover={{ scaleX: 1 }}
-                  transition={{ duration: 0.3 }}
-                />
               </motion.div>
             ))}
           </div>
 
           {/* Mobile Menu Button */}
-          <button
+          <motion.button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white focus:outline-none"
+            whileTap={{ scale: 0.9 }}
+            className="md:hidden text-cyan-400 hover:text-purple-400  focus:outline-none p-2 rounded-lg border border-cyan-400/30 hover:border-cyan-400"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          {isOpen ? <X size={32} /> : <Menu size={32} />}
+          </motion.button>
         </div>
-      </div>
+      </nav>
 
-      {/* Mobile Nav */}
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-transparent text-white space-y-4 p-4"
-        >
-          {navLinks.map((link, index) => (
-            <Link
-              key={index}
-              to={link.path}
-              className="block text-lg hover:text-green-400 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </motion.div>
-      )}
-    </nav>
+      {/* Mobile Menu - Full Screen Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ x: "-100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "-100%" }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 w-1/2 h-screen bg-black/95 backdrop-blur-xl shadow-lg flex flex-col items-start mt-24 pb-16 justify-start space-y-6 pl-8  z-[9999]"
+          >
+            {/* <button onClick={() => setIsOpen(false)} className="absolute top-5 right-5 text-cyan-400 hover:text-purple-400 p-2 rounded-lg border border-cyan-400/30 hover:border-cyan-400">
+              <X size={32} />
+            </button> */}
+
+            {navLinks.map((link, index) => (
+              <motion.div key={index} initial={{ x: -50 }} animate={{ x: 0 }} transition={{ delay: index * 0.1 }} className="relative">
+                <Link
+                  to={link.path}
+                  className="text-1xl font-bold text-cyan-400 hover:text-purple-400 px-6 py-3 border-b-2 border-transparent hover:border-cyan-400 transition-all"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 
-export default Navbar; 
+export default Navbar;
