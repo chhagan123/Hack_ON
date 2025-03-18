@@ -13,27 +13,27 @@ const supportTeam = [
     name: "Himanshu Dhenge",
     role: "Judging and Participation Tech",
     email: "himanshudhenge4@gmail.com",
-    phone: "+91 87654 32109"
+    phone: "+91 9322913858"
   },
   {
     id: 3,
-    name: "Shubham Kopare",
-    role: "Technical Support Head",
-    email: "shubhamkopare2004@gmil.com",
-    phone: "+91 76543 21098"
+    name: "Gagan Zade",
+    role: "Technical support",
+    email: "GaganZade2006@gmai.com",
+    phone: "+91 9689477797"
   },
   {
     id: 4,
-    name: "Emily Davis",
-    role: "Network Engineer",
-    email: "emily.davis@example.com",
-    phone: "+91 65432 10987"
+    name: "Priyanshu Patle",
+    role: "E-sport coordinator",
+    email: "priyanshupatle2@gmail.com",
+    phone: "+91 703883684 "
   }
 ];
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-900 p-6 text-white">
+    <div className="min-h-screen bg-gray-900 pt-20 text-white">
       <h1 className="text-4xl font-bold text-center mb-8">Contact Us</h1>
 
       {/* Support Team Section */}

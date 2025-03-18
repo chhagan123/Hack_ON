@@ -7,7 +7,7 @@ const TechverseHackathon = () => {
       <div className="w-full max-w-6xl text-center">
       
         <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-lg">
-          Techverse Hackathon 2K25
+          KrutiVerse Hackathon 2K25
         </h1>
         <p className="text-gray-300 text-lg mt-4">
           🚀 <strong>Where Innovation Meets Execution!</strong>

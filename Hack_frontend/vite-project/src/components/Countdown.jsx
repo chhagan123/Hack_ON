@@ -27,7 +27,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="w-full mt-10 min-h-screen flex flex-col items-center justify-center relative overflow-hidden bg-black animate-background">
+    <div className="w-full mt-20  min-h-130 flex flex-col items-center justify-center relative overflow-hidden bg-black animate-background">
       {/* Animated particles */}
       <div className="absolute inset-0 z-0">
         {[...Array(50)].map((_, i) => (

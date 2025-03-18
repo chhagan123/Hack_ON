@@ -35,7 +35,7 @@ const Navbar = () => {
           <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">
             <span className="text-cyan-400 text-3xl font-bold">{'</>'}</span>
             <h1 className="text-3xl font-extrabold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">
-              Techkruti 2K25
+              TechKruti 2K25
             </h1>
           </motion.div>
         

@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 const events = [ {
   id: 1,
-  title: "Techverse Hackathon 2K25",
+  title: "KrutiVerse Hackathon 2K25",
   description:
     "Compete in an intense 7-hour coding marathon to solve real-world challenges.",
   img: "Hackthon.jpg",
-  fee: "₹80 per head",
+  fee: "₹80 per Head",
   teamSize: "2-4 members",
   venue: "TGPCET campus",
   date: "28th March",
@@ -59,7 +59,7 @@ const events = [ {
     "Show off your creativity and humor by creating the most hilarious and trending memes.",
   img: "MemeBattle.jpg",
   fee: "₹30 per participant",
-  teamSize: "1-2 members",
+  teamSize: "Solo",
   venue: "TGPCET campus",
   date: "29th March",
   time: "10:00 AM - 5:00 PM",
@@ -69,7 +69,7 @@ const Upcoming = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full min-h-screen bg-black py-12 px-4 sm:px-6 lg:px-8">
+    <div className="w-full min-h-screen bg-black  px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent animate-gradient">
