@@ -21,8 +21,8 @@ const events = [ {
     "Battle in top-tier gaming tournaments featuring Valorant, BGMI, and Free Fire.",
   img: "pubg.jpg",
   fee: "₹200 per squad",
-  teamSize: "2-4 members",
-  venue: "Gaming Arena",
+  teamSize: "4 members",
+  venue: "JRD Hall",
   date: "29th March",
   time: "9:00 AM - 4:00 PM",
   registerLink:

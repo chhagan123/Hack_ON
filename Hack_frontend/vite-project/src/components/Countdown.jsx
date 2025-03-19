@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 
 const Countdown = () => {
-  const targetDate = new Date("March 28, 2025 00:00:00").getTime();
+  const targetDate = new Date("March 28, 2025 9:00:00").getTime();
   
   function getTimeRemaining() {
     const now = new Date().getTime();
@@ -59,7 +59,7 @@ const Countdown = () => {
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-medium">
-            Organized by CSE (Data Science) Department, TGPCET Nagpur Mohgav <br/> An Autonomous Institute
+            Organized by CSE (Data Science) Department In Association with CSI, TGPCET Nagpur Mohgav <br/> An Autonomous Institute
           </p>
           <h1 className="text-purple-400 sm:text-xl">Techkruti 2K25 Begins In</h1>
         </div>

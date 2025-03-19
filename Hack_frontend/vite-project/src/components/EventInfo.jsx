@@ -43,7 +43,7 @@ const events = [
     subtitle: "Battle in top-tier gaming tournaments featuring Valorant, BGMI, and Free Fire.",
     date: "29 March, 2025",
     about: [
-      {
+      {  
         heading: "About the Event",
         description: [
           "🎮 What is the E-Sports Championship?",
@@ -68,7 +68,10 @@ const events = [
     ],
     contacts: [
       { name: "Priyanshu Patle", phone: "+91 70388 36841" },
-      { name: "Dishant Janbandhu", phone: "+91 7517938702" } 
+      { name: "Dishant Janbandhu", phone: "+91 7517938702" } ,
+      { name: "Aditya Korde", phone: "+91 8446950836" },
+      { name: "Paras Longadge", phone: "+91 8329390262" }
+
     ]
   },
   {
