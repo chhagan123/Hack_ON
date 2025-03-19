@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "TechVerse Hack", path: "/hackthon" },
+    { name: "KrutiVerse Hack", path: "/hackthon" },
     { name: "About", path: "/about" },
     { name: "Contact Us", path: "/contact" },
     { name: "Sponsor", path: "/sponsor" },
