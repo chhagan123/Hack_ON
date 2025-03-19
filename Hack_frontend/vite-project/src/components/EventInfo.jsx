@@ -20,8 +20,10 @@ const events = [
           "- Gain mentorship from industry experts",
           "- Win exciting prizes and recognition",
           "- Network with like-minded tech enthusiasts"
-        ]
+        ],
+        
       }
+
     ],
     highlights: [
       "Creativity & Functionality",
@@ -42,6 +44,7 @@ const events = [
     title: "E-Sports Championship",
     subtitle: "Battle in top-tier gaming tournaments featuring Valorant, BGMI, and Free Fire.",
     date: "29 March, 2025",
+     registration:"https://forms.gle/FQ1y7L7nQoK75ZQY6",
     about: [
       {  
         heading: "About the Event",
@@ -51,11 +54,13 @@ const events = [
           "",
           "🔥 Why Participate?",
           "- Compete in high-stakes tournaments with skilled players",
+          "- Everyone has to paly games using their own mobile internet only, we will not provide WiFi Sysytem",
           "- Play your favorite games: Valorant, BGMI, and Free Fire",
           "- Win cash prizes, exclusive in-game rewards, and trophies",
           "- Experience a thrilling gaming atmosphere with live commentary",
           "- Meet and connect with pro gamers and gaming influencers"
-        ]
+        ],
+       
       }
     ],
     highlights: [
@@ -172,7 +177,7 @@ const events = [
       { name: "Nidhi meshram", phone: "+91 8180962625" }
     ],
   }
-  
+  // Update other events similarly...
 ];
 
 const EventInfo = () => {
@@ -184,68 +189,111 @@ const EventInfo = () => {
   }
 
   return (
-    <div className="text-white mt-20 in-h-screen px-6 py-8 flex flex-col items-center bg-transparent">
-      <div className="w-full max-w-5xl flex flex-col items-center">
+    <div className="text-white mt-20 min-h-screen px-6 py-8 flex flex-col items-center bg-gradient-to-b from-gray-900 to-gray-800">
+      <div className="w-full max-w-5xl flex flex-col items-center space-y-12">
 
-        {/* Event Title */}
-        <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-wide uppercase bg-gradient-to-r from-teal-300 via-blue-500 to-purple-400 bg-clip-text text-transparent drop-shadow-lg">
+        {/* Event Header */}
+        <div className="text-center space-y-4 animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-wide uppercase bg-gradient-to-r from-teal-300 via-blue-500 to-purple-400 bg-clip-text text-transparent drop-shadow-lg hover:scale-105 transition-transform duration-300">
             {event.title}
           </h1>
-          <p className="mt-3 text-lg sm:text-xl text-gray-300">{event.subtitle}</p>
-          <p className="mt-2 text-base sm:text-lg font-semibold text-blue-300">
-            📅 Date: <span className="text-white">{event.date}</span>
+          <p className="mt-3 text-lg sm:text-xl text-gray-300 font-medium">
+            {event.subtitle}
           </p>
+          <div className="flex items-center justify-center space-x-2">
+            <span className="text-blue-300">🗓️</span>
+            <p className="text-lg font-semibold text-blue-300">
+              {event.date}
+            </p>
+          </div>
         </div>
 
+        {/* Registration Button */}
+        {event.registration && (
+          <a 
+            href={event.registration}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative overflow-hidden group px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-blue-500 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/40"
+          >
+            <span className="flex items-center space-x-2">
+              <span className="text-xl">🚀</span>
+              <span className="text-lg font-bold tracking-wide">Register Now</span>
+            </span>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 bg-gradient-to-r from-white/30 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full" />
+          </a>
+        )}
+
         {/* About Section */}
-        <div className="max-w-3xl text-center mt-8 sm:mt-10 px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-blue-400 glow-effect">About the Event</h2>
-          <div className="mt-4 space-y-4">
+        <div className="w-full max-w-3xl space-y-8 backdrop-blur-sm bg-gray-800/30 rounded-2xl p-8 border border-gray-700 shadow-xl">
+          <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+            Event Details
+          </h2>
+          <div className="space-y-6">
             {event.about.map((section, index) => (
-              <div key={index}>
+              <div key={index} className="space-y-4">
                 {section.description.map((line, i) => (
-                  <p key={i} className="text-base sm:text-lg text-gray-300">{line}</p>
+                  <p 
+                    key={i} 
+                    className={`text-lg ${
+                      line.startsWith("🚀") || line.startsWith("💡") || line.startsWith("🎮") 
+                        ? "font-bold text-blue-300" 
+                        : "text-gray-300"
+                    }`}
+                  >
+                    {line}
+                  </p>
                 ))}
               </div>
             ))}
           </div>
         </div>
 
-        {/* Register Button */}
-        <div className="flex justify-center w-full">
-          <button className="mt-8 bg-gradient-to-r from-cyan-400 to-blue-600 px-6 py-3 text-lg font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-200 hover:shadow-blue-500/50">
-            🚀 Register Now
-          </button>
-        </div>
-
         {/* Key Highlights */}
-        <div className="mt-12 sm:mt-16 w-full">
-          <h2 className="text-3xl sm:text-4xl font-bold text-blue-400 text-center glow-effect">Key Highlights</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 text-center">
+        <div className="w-full max-w-4xl space-y-8">
+          <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-yellow-400 to-red-500 bg-clip-text text-transparent">
+            🌟 Key Highlights
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {event.highlights.map((highlight, index) => (
               <div
                 key={index}
-                className="p-5 border border-gray-700 rounded-lg shadow-md hover:shadow-blue-500/50 transition-shadow duration-300 bg-gray-900 bg-opacity-50 backdrop-blur-lg"
+                className="p-6 bg-gray-800/50 rounded-xl border border-gray-700 transform hover:scale-105 transition-all duration-300 group"
               >
-                <p className="text-lg font-semibold">{highlight}</p>
+                <div className="flex items-center space-x-3">
+                  <div className="h-2 w-2 bg-blue-400 rounded-full animate-pulse" />
+                  <p className="text-lg font-medium text-gray-300 group-hover:text-white">
+                    {highlight}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Contact Section */}
-        <div className="mt-12 sm:mt-16 text-center w-full">
-          <h2 className="text-3xl sm:text-4xl font-bold text-blue-400 glow-effect">Contact Us</h2>
-          <p className="mt-3 text-lg text-gray-300">For inquiries, please contact:</p>
-          <div className="mt-3 space-y-2">
+        <div className="w-full max-w-2xl space-y-8 text-center bg-gray-800/30 rounded-2xl p-8 border border-gray-700">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+            📱 Contact Coordinators
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {event.contacts.map((contact, index) => (
-              <p key={index} className="text-lg font-semibold">
-                📞 {contact.name}: <span className="text-blue-300">{contact.phone}</span>
-              </p>
+              <div
+                key={index}
+                className="p-4 bg-gray-700/20 rounded-lg hover:bg-gray-700/40 transition-colors duration-300"
+              >
+                <p className="text-lg font-semibold text-blue-300">{contact.name}</p>
+                <a
+                  href={`tel:${contact.phone}`}
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
+                >
+                  {contact.phone}
+                </a>
+              </div>
             ))}
           </div>
         </div>
+
       </div>
     </div>
   );
