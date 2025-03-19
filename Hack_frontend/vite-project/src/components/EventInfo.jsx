@@ -83,7 +83,7 @@ const events = [
     id: 3,
     title: "Project Expo",
     subtitle: "Showcase Your Innovative Projects to Industry Experts",
-    date: "30 March, 2025",
+    date: "28 March, 2025",
     about: [
       {
         heading: "About the Event",
@@ -115,7 +115,7 @@ const events = [
     id: 4,
     title: "AI/ML Debate",
     subtitle: "Discuss the Future of AI & Machine Learning",
-    date: "31 March, 2025",
+    date: "28 March, 2025",
     about: [
       {
         heading: "About the Event",

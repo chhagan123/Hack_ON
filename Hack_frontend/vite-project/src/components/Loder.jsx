@@ -32,7 +32,7 @@ const Loder = () => {
           }}
           className="text-gray-300 italic relative"
         >
-          <span className="text-lg md:text-xl lg:text-2xl font-light">Powered by</span>
+          <span className="text-lg md:text-xl lg:text-2xl font-light">orgnised by</span>
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ const Loder = () => {
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 1.5, repeat: Infinity }}
             >
-              DATA science TGPCET
+              Data Science TGPCET
             </motion.span>
           </motion.span>
         </motion.div>
