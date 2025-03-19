@@ -2,9 +2,9 @@ import React from "react";
 
 const sponsors = [
   { id: 1, name: "CSI", logo: "CSI.jpg", website: "https://csiindia.org/" },
-  { id: 2, name: "CodeWave", logo: "https://via.placeholder.com/150", website: "https://codewave.com" },
-  { id: 3, name: "CyberNext", logo: "https://via.placeholder.com/150", website: "https://cybernext.com" },
-  { id: 4, name: "InnoByte", logo: "https://via.placeholder.com/150", website: "https://innobyte.com" },
+  { id: 1, name: "LOC", logo: "	https://lifeofchai.in/Images/loc%20menu%20colour_2.png", website: "https://lifeofchai.in/" },
+
+ 
 ];
 
 const Sponsor = () => {

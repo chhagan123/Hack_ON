@@ -108,8 +108,8 @@ const events = [
       "Hands-on Feedback & Mentorship",
     ],
     contacts: [
-      { name: "Vishakha ghatole", phone: "8008212898"},
-      { name: "Nidhi Sharnagat", phone: "9021138083"}
+      { name: "Vishakha ghatole", phone: "+91 8208212898"},
+      { name: "Nidhi Sharnagat", phone: "+91 9021138083"}
     ],
   },
   {
@@ -141,7 +141,7 @@ const events = [
       "Certificate of Participation",
     ],
     contacts: [
-      { name: "Devanshi Shingade", phone: " +707750311"},
+      { name: "Devanshi Shingade", phone: "+91 7077503311"},
       { name: "Nidhi meshram", phone: "+91 8180962625" }
     ],
   },
