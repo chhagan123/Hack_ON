@@ -90,7 +90,7 @@ const Countdown = () => {
         {/* Event Details */}
         <div className="space-y-2 mt-8">
           <p className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-300">
-            March 28-29, 2024 | TGPCET Campus
+            March 28-29, 2025 | TGPCET Campus
           </p>
         </div>
       </div>

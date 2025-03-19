@@ -35,7 +35,7 @@ const events = [ {
     "Showcase your innovative tech projects to industry leaders and investors.",
   img: "Projects.jpg",
   fee: "₹100 per entry",
-  teamSize: "2-4 members",
+  teamSize: "1-2 members",
   venue: "Expo Hall",
   date: "28th March",
   time: "9:00 AM - 4:00 PM",
