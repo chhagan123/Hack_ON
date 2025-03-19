@@ -28,7 +28,15 @@ const supportTeam = [
     role: "E-sport coordinator",
     email: "priyanshupatle2@gmail.com",
     phone: "+91 703883684 "
+  },
+  {
+    id: 5,
+    name: "Adity korde",
+    role: "E-sport coordinator",
+    email: "Aditykorade@7gmail.com",
+    phone: "+91 8446950836"
   }
+
 ];
 
 const Contact = () => {
