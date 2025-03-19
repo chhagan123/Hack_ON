@@ -84,6 +84,7 @@ const events = [
     title: "Project Expo",
     subtitle: "Showcase Your Innovative Projects to Industry Experts",
     date: "28 March, 2025",
+    registration:"https://forms.gle/x9t8waM5yNJdU6mC8",
     about: [
       {
         heading: "About the Event",
@@ -116,6 +117,7 @@ const events = [
     title: "AI/ML Debate",
     subtitle: "Discuss the Future of AI & Machine Learning",
     date: "28 March, 2025",
+    registration:"https://forms.gle/4Tcd9Qc8bKMBPyCS7",
     about: [
       {
         heading: "About the Event",
@@ -148,6 +150,7 @@ const events = [
     title: "Meme Battle",
     subtitle: "Unleash Your Creativity with the Funniest Memes",
     date: "29 March, 2025",
+    registration:"https://forms.gle/WgyCR1D46b6ewYBcA",
     about: [
       {
         heading: "About the Event",

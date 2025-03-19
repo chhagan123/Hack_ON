@@ -39,6 +39,7 @@ const events = [ {
   venue: "Expo Hall",
   date: "28th March",
   time: "9:00 AM - 4:00 PM",
+  registerLink:"https://forms.gle/x9t8waM5yNJdU6mC8"
 },
 {
   id: 4,
@@ -51,6 +52,7 @@ const events = [ {
   venue: "TGPCET campus",
   date: "28th March",
   time: "10:00 AM - 5:00 PM",
+  registerLink:"https://forms.gle/4Tcd9Qc8bKMBPyCS7"
 },
 {
   id: 5,
@@ -63,6 +65,7 @@ const events = [ {
   venue: "TGPCET campus",
   date: "29th March",
   time: "10:00 AM - 5:00 PM",
+  registerLink:"https://forms.gle/WgyCR1D46b6ewYBcA"
 },];
 
 const Upcoming = () => {
