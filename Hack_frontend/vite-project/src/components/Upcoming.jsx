@@ -66,7 +66,21 @@ const events = [ {
   date: "29th March",
   time: "10:00 AM - 5:00 PM",
   registerLink:"https://forms.gle/WgyCR1D46b6ewYBcA"
-},];
+},
+{
+  "id": 6,
+  "title": "Ciphertext Treasure Hunt",
+  "description": "Decode encrypted clues and solve puzzles to find the hidden treasure.",
+  "img": "Cipher.jpg",
+  "fee": "₹100/- entry",
+  "teamSize": "4 members",
+  "venue": "Mystery Room",
+  "date": "29 March",
+  "time": "10:00 Am - 4:00 PM",
+  "registerLink": "https://forms.gle/7wNGM65ufrGzCVGJ7"
+}
+
+];
 
 const Upcoming = () => {
   const navigate = useNavigate();

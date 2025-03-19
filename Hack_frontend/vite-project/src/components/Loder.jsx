@@ -47,7 +47,7 @@ const Loder = () => {
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 1.5, repeat: Infinity }}
             >
-              Data Science TGPCET
+           CSE Data Science <br/> TGPCET
             </motion.span>
           </motion.span>
         </motion.div>

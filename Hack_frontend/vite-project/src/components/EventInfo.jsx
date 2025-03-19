@@ -179,7 +179,42 @@ const events = [
       { name: "Devanshi Shingade", phone: " +707750311"},
       { name: "Nidhi meshram", phone: "+91 8180962625" }
     ],
-  }
+  },
+  {
+  id: 6,
+    title: "CipherText Treasure Hunt",
+    subtitle: "Solve the encrypted clues to find the treasure!",
+    date: "29 March, 2025",
+    about: [
+      {
+        heading: "About the Event",
+        description: [
+          "🔐 What is CipherText Treasure Hunt?",
+          "Cipher Treasure Hunt is an exciting puzzle-solving event where participants decode encrypted messages to find the hidden treasure.",
+          "",
+          "💡 Why Participate?",
+          "- Challenge your cryptography and problem-solving skills",
+          "- Work in teams to decrypt ciphers",
+          "- Win exciting prizes and recognition",
+          "- Learn about different encryption techniques",
+          "- Have fun with an interactive adventure!"
+        ]
+      }
+    ],
+    highlights: [
+      "Cryptography & Problem-Solving",
+      "Team Collaboration",
+      "Exciting Prizes & Recognition",
+      "Innovative Challenges",
+      "Fun and Engaging Treasure Hunt",
+      "Decode & Discover"
+    ],
+    contacts: [
+      { name: "Devanshi Shingade", phone: " +707750311"},
+      { name: "Nidhi meshram", phone: "+91 8180962625" }
+    ]
+}
+
   // Update other events similarly...
 ];
 
