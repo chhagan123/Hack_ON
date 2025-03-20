@@ -109,7 +109,9 @@ const events = [
     ],
     contacts: [
       { name: "Vishakha ghatole", phone: "+91 8208212898"},
-      { name: "Nidhi Sharnagat", phone: "+91 9021138083"}
+      { name: "Nidhi Sharnagat", phone: "+91 9021138083"},
+      {name:"Pranay Dhore",phone:"+91 7498678112 "},
+      {name:"Dipanshu Waradhe",phone:"+91 7498623657"}
     ],
   },
   {
@@ -211,7 +213,8 @@ const events = [
     ],
     contacts: [
       { name: "Devanshi Shingade", phone: " +707750311"},
-      { name: "Nidhi meshram", phone: "+91 8180962625" }
+      { name: "Harsh chahande", phone: "+91 7447343307" },
+      { name: "Kunal gomkar", phone: "+91 9763606402" }
     ]
 }
 
