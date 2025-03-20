@@ -18,8 +18,8 @@ const supportTeam = [
   {
     id: 3,
     name: "Gagan Zade",
-    role: "Technical support",
-    email: "GaganZade2006@gmai.com",
+    role: "Registartion  technical support",
+    email: "zadegagan17@gmail.com",
     phone: "+91 9689477797"
   },
   {
@@ -33,8 +33,15 @@ const supportTeam = [
     id: 5,
     name: "Adity Korde",
     role: "E-sport coordinator",
-    email: "Aditykorade@7gmail.com",
+    email: "amdk282005@gmail.com",
     phone: "+91 8446950836"
+  },
+  {
+    id: 6,
+    name: "Sarang Kachare",
+    role: "Registartion technical support",
+    email: "sarangkachare111@gmail.com",
+    phone: "+91 9325489326"
   }
 ];
 
