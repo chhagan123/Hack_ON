@@ -2,7 +2,8 @@ import React from "react";
 
 const sponsors = [
   { id: 1, name: "CSI", logo: "CSI.jpg", website: "https://csiindia.org/" },
-  { id: 1, name: "LOC", logo: "	https://lifeofchai.in/Images/loc%20menu%20colour_2.png", website: "https://lifeofchai.in/" },
+  { id: 2, name: "LOC", logo: "	https://lifeofchai.in/Images/loc%20menu%20colour_2.png", website: "https://lifeofchai.in/" },
+  {id:3,name:"Unnati Motor",logo:"Unnatimotors.jpg",website:"https://www.unnatimotor.com/"}
 
  
 ];
