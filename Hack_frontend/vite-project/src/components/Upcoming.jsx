@@ -16,13 +16,13 @@ const events = [ {
 },
 {
   id: 2,
-  title: "E-Sports Championship",
+  title: "E-Sports LAN Event",
   description:
     "Battle in top-tier gaming tournaments featuring Valorant, BGMI, and Free Fire.",
   img: "pubg.jpg",
   fee: "₹200 per squad",
   teamSize: "4 members",
-  venue: "JRD Hall",
+  venue: "TGPCET Campus",
   date: "29th March",
   time: "9:00 AM - 4:00 PM",
   registerLink:
@@ -36,7 +36,7 @@ const events = [ {
   img: "Projects.jpg",
   fee: "₹100 per entry",
   teamSize: "1-2 members",
-  venue: "Expo Hall",
+  venue: "Data Science Department",
   date: "28th March",
   time: "9:00 AM - 4:00 PM",
   registerLink:"https://forms.gle/x9t8waM5yNJdU6mC8"
