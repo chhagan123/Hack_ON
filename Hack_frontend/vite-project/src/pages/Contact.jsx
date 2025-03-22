@@ -17,27 +17,35 @@ const supportTeam = [
   },
   {
     id: 3,
+    name: "Shubham Kopare",
+    role: "Judging  Tech",
+    email: "shubhamkopare2004@gmail.com",
+    phone: "+91 8485029672"
+  }
+  ,
+  {
+    id: 4,
     name: "Gagan Zade",
     role: "Registartion  technical support",
     email: "zadegagan17@gmail.com",
     phone: "+91 9689477797"
   },
   {
-    id: 4,
+    id: 5,
     name: "Priyanshu Patle",
     role: "E-sport coordinator",
     email: "priyanshupatle2@gmail.com",
     phone: "+91 703883684"
   },
   {
-    id: 5,
+    id: 6,
     name: "Adity Korde",
     role: "E-sport coordinator",
     email: "amdk282005@gmail.com",
     phone: "+91 8446950836"
   },
   {
-    id: 6,
+    id: 7,
     name: "Sarang Kachare",
     role: "Registartion technical support",
     email: "sarangkachare111@gmail.com",
