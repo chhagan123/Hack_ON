@@ -59,7 +59,7 @@ const Countdown = () => {
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-medium">
-            Organized by CSE (Data Science) Department In Association with CSI, TGPCET Nagpur Mohgav <br/> An Autonomous Institute
+            Organized by CSE (Data Science) Department In Association with CSI, TGPCET Nagpur Mohgaon <br/> An Autonomous Institute
           </p>
           <h1 className="text-purple-400 sm:text-xl">Techkruti 2K25 Begins In</h1>
         </div>
