@@ -71,6 +71,9 @@ const TechverseHackathon = () => {
             Chhagan Rakhade: <span className="text-blue-500 hover:text-white">+91 9158396794</span>
           </h2>
           <h2 className="text-xl font-semibold text-gray-300 hover:text-blue-400 transition duration-300 cursor-pointer">
+            Shubham Kopare:<span className="text-blue-500 hover:text-white">+91 8485029672</span>
+          </h2>
+          <h2 className="text-xl font-semibold text-gray-300 hover:text-blue-400 transition duration-300 cursor-pointer">
             Himanshu Dhenge: <span className="text-blue-500 hover:text-white">+91 9322913858</span>
           </h2>
           <h2 className="text-xl font-semibold text-gray-300 hover:text-blue-400 transition duration-300 cursor-pointer">
