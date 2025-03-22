@@ -10,7 +10,7 @@ import Event from "./pages/Event";
 import Hackathons from "./pages/Hackathons";
 import Loder from "./components/Loder"; // Import Loader
 import Sponsor from "./pages/Sponsor";
-import ScrollToTop from "./components/ScrollToTop"; 
+import Scroll from "./components/Scroll"; 
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,7 +30,7 @@ function App() {
     <>
       {/* <CodeBackground id="particles" /> */}
       <Navbar id="nav"  />
-      <ScrollToTop /> 
+      <Scroll /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
