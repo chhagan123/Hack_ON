@@ -2,13 +2,27 @@ import React from "react";
 
 const TechverseHackathon = () => {
   return (
-    <div className="w-full mt-20 min-h-screen text-white flex flex-col items-center py-12 px-6">
+    <div className="w-full mt-20 py-10 min-h-auto text-white flex flex-col items-center px-26 ">
       {/* Hero Section */}
       <div className="w-full max-w-6xl text-center">
         <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-lg">
-          Techverse Hackathon 2K25
+          KrutiVerse Hackathon 2K25
         </h1>
-        <p className="text-gray-300 text-lg mt-4">🚀 <strong>Where Innovation Meets Execution!</strong></p>
+        
+        {/* In association with DevCult */}
+        <div className=" flex flex-col items-center">
+        <p className="text-lg font-semibold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+  In Association with
+</p>
+
+          <img 
+            src="Dev.jpg" 
+            alt="DevCult Logo" 
+            className="w-80 "
+          />
+        </div>
+
+        <p className="text-gray-300 text-lg mt-1">🚀 <strong>Where Innovation Meets Execution!</strong></p>
         <p className="text-gray-300 text-lg mt-2">
           💡 Join a high-energy <strong>7-hour coding marathon</strong> where top minds solve <strong>real-world challenges</strong>, compete with <strong>elite developers</strong>, and <strong>showcase their skills</strong> for exciting rewards!
         </p>

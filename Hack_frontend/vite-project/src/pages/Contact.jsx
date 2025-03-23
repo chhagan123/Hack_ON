@@ -39,7 +39,7 @@ const supportTeam = [
   },
   {
     id: 6,
-    name: "Adity Korde",
+    name: "Aditya Korde",
     role: "E-sport coordinator",
     email: "amdk282005@gmail.com",
     phone: "+91 8446950836"
