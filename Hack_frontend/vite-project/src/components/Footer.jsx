@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="relative bg-gradient-to-r from-[#0D1117] to-[#1A1F2B]  text-white py-4 px-6 text-center">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         <h2 className="text-base sm:text-lg font-semibold text-cyan-400 uppercase">
-          TECHKRUTI 2025
+          TECHKRUTI 2K25
         </h2>
         <p className="text-gray-400 text-xs sm:text-sm text-center">
           CSE & Data Science | TGPCET, Mohgav

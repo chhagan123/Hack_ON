@@ -86,7 +86,7 @@ const Upcoming = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full min-h-screen bg-black  px-4 sm:px-6 lg:px-8">
+    <div className="w-full min-h-screen bg-black mb-5  px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent animate-gradient">

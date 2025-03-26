@@ -1,20 +1,50 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Rocket, LogIn, LogOut, Code2, Home, Contact, Info, Trophy } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  // Toggle authentication state
+  const toggleAuth = () => {
+    setIsAuthenticated((prev) => !prev);
+  };
+  const checkAuthStatus = () => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    
+    setIsAuthenticated(token);
+  };
+
+  useEffect(() => {
+    checkAuthStatus(); // Initial check
+
+    // Listen for login/logout changes
+    const handleStorageChange = () => checkAuthStatus();
+    window.addEventListener("storage", handleStorageChange);
+
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+    };
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setIsAuthenticated(false);
+  };
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "KrutiVerse Hack", path: "/hackthon" },
-    { name: "About", path: "/about" },
-    { name: "Contact Us", path: "/contact" },
-    { name: "Sponsor", path: "/sponsor" },
+    { name: "Home", path: "/", icon: <Home size={18} /> },
+    { name: "KrutiVerse Hack", path: "/hackthon", icon: <Rocket size={18} /> },
+    { name: "About", path: "/about", icon: <Info size={18} /> },
+    { name: "Contact Us", path: "/contact", icon: <Contact size={18} /> },
+    // { name: "", path: "/ProblemForm", icon: <Code2 size={18} /> },
+    
+    { name: "Sponsor", path: "/sponsor", icon: <Trophy size={18} /> },
   ];
 
-  // Prevent background scrolling when menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -29,64 +59,127 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed h-auto bg-black/90 top-0 left-0 w-full backdrop-blur-md border-b-2 border-cyan-500/30 shadow-xl shadow-cyan-500/20 z-[9999] pb-4">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-4 flex justify-between items-center">
+      <nav className="fixed top-0 left-0 w-full bg-black/90 backdrop-blur-md border-b-[3px] border-cyan-500/50 shadow-lg shadow-cyan-500/20 z-[9999] pb-4 animate-border">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex justify-between items-center">
           {/* Logo */}
-          <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">
-            <span className="text-cyan-400 text-3xl font-bold">{'</>'}</span>
-            <h1 className="text-3xl font-extrabold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">
+          <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-3">
+            <div className="p-2 bg-gradient-to-tr from-cyan-500 to-purple-600 rounded-lg shadow-lg">
+              <Code2 className="text-white" size={28} />
+            </div>
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
               TechKruti 2K25
             </h1>
           </motion.div>
-        
-           {/* Desktop Nav */}
-          <div className="hidden md:flex space-x-8 items-center">
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-6 items-center">
             {navLinks.map((link, index) => (
-              <motion.div key={index} whileHover={{ y: -2 }} className="relative group">
-                <Link to={link.path} className="text-lg text-gray-300 hover:text-cyan-400 transition-all font-medium px-3 py-2">
-                  {link.name}
-                  <div className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-cyan-400 group-hover:w-full group-hover:left-0 transition-all duration-300" />
+              <motion.div key={index} className="relative group" whileHover={{ scale: 1.1 }}>
+                <Link to={link.path} className="flex items-center text-gray-300 hover:text-cyan-400 transition-all duration-300">
+                  <span className="mr-2 opacity-70 group-hover:opacity-100">{link.icon}</span>
+                  <span className="font-medium">{link.name}</span>
                 </Link>
+
+                {/* Animated Underline */}
+                <motion.div
+                  className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-0 group-hover:opacity-100"
+                  initial={{ width: "0%" }}
+                  whileHover={{ width: "100%" }}
+                  transition={{ duration: 0.3 }}
+                />
               </motion.div>
             ))}
+
+            {/* Auth Button */}
+            <motion.div whileHover={{ scale: 1.05 }}>
+              {isAuthenticated ? (
+                <button
+                onClick={() => {
+                  toggleAuth();
+                  handleLogout();
+                }}
+                
+                  className="ml-4 px-6 py-2 bg-gradient-to-r from-red-600 to-cyan-500 rounded-full text-white font-semibold flex items-center hover:shadow-lg transition-all"
+                >
+                  <LogOut className="mr-2" size={18} />
+                  Logout
+                </button>
+              ) : (
+                <Link
+                  to="/login"
+                  className="ml-4 px-6 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full text-white font-semibold flex items-center hover:shadow-lg transition-all"
+                >
+                  <LogIn className="mr-2" size={18} />
+                  Admin Login
+                </Link>
+              )}
+            </motion.div>
           </div>
 
           {/* Mobile Menu Button */}
           <motion.button
             onClick={() => setIsOpen(!isOpen)}
-            whileTap={{ scale: 0.9 }}
-            className="md:hidden text-cyan-400 hover:text-purple-400  focus:outline-none p-2 rounded-lg border border-cyan-400/30 hover:border-cyan-400"
+            whileTap={{ scale: 0.95 }}
+            className="md:hidden p-2 bg-gray-800 rounded-lg text-cyan-400 hover:bg-gray-700 transition-colors"
           >
-          {isOpen ? <X size={32} /> : <Menu size={32} />}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </motion.button>
         </div>
       </nav>
 
-      {/* Mobile Menu - Full Screen Overlay */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 w-1/2 h-screen bg-black/95 backdrop-blur-xl shadow-lg flex flex-col items-start mt-24 pb-16 justify-start space-y-6 pl-8  z-[9999]"
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            className="fixed inset-0 w-3/4 h-screen bg-gray-900/90 flex flex-col items-center justify-start pt-24 space-y-6 z-40"
           >
-            {/* <button onClick={() => setIsOpen(false)} className="absolute top-5 right-5 text-cyan-400 hover:text-purple-400 p-2 rounded-lg border border-cyan-400/30 hover:border-cyan-400">
-              <X size={32} />
-            </button> */}
-
             {navLinks.map((link, index) => (
-              <motion.div key={index} initial={{ x: -50 }} animate={{ x: 0 }} transition={{ delay: index * 0.1 }} className="relative">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className="w-full px-8"
+              >
                 <Link
                   to={link.path}
-                  className="text-1xl font-bold text-cyan-400 hover:text-purple-400 px-6 py-3 border-b-2 border-transparent hover:border-cyan-400 transition-all"
                   onClick={() => setIsOpen(false)}
+                  className="flex items-center px-6 py-3 text-gray-300 hover:bg-gray-800 rounded-xl transition-all"
                 >
-                  {link.name}
+                  <span className="mr-4 text-cyan-400">{link.icon}</span>
+                  <span className="text-lg font-medium">{link.name}</span>
                 </Link>
               </motion.div>
             ))}
+
+            {/* Mobile Auth Button */}
+            <div className="w-full px-8 mt-6 border-t border-gray-800 pt-4">
+              {isAuthenticated ? (
+                <button
+                  onClick={() => {
+                    toggleAuth();
+                    setIsOpen(false);
+                  }}
+                  className="w-full px-6 py-3 bg-gradient-to-r from-red-600 to-cyan-500 rounded-full text-white font-semibold flex items-center justify-center"
+                >
+                  <LogOut className="mr-2" size={18} />
+                  Logout
+                </button>
+              ) : (
+                <Link
+                  to="/login"
+                  onClick={() => setIsOpen(false)}
+                  className="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full text-white font-semibold flex items-center justify-center"
+                >
+                  <LogIn className="mr-2" size={18} />
+                  Admin Login
+                </Link>
+              )}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

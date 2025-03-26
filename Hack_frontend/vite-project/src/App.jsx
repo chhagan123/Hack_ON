@@ -11,6 +11,11 @@ import Hackathons from "./pages/Hackathons";
 import Loder from "./components/Loder"; // Import Loader
 import Sponsor from "./pages/Sponsor";
 import Scroll from "./components/Scroll"; 
+import ProblemStatements from "./pages/Problems";
+import ProblemForm from "./pages/ProblemForm";
+import LoginForm from "./pages/LoginForm";
+import RegisterForm from "./pages/RegisterForm";
+import ProblemList from "./pages/ProblemList";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +43,11 @@ function App() {
         <Route path="/event/:id" element={<Event />} />
         <Route path="/hackthon" element={<Hackathons />} />
         <Route path="/Sponsor" element={<Sponsor />} />
+        <Route path="/ProblemStatements8485" element={<ProblemStatements />} />
+        <Route path="/ProblemForm" element={<ProblemForm />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/register" element={<RegisterForm/>} />
+        <Route path="/repos" element={<ProblemList/>} />
       </Routes>
       <Footer />
     </>

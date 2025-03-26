@@ -3,7 +3,9 @@ import React from "react";
 const sponsors = [
   { id: 1, name: "CSI", logo: "CSI.jpg", website: "https://csiindia.org/" },
 
-  {id:3,name:"Unnati Motor",logo:"Unnatimotors.jpg",website:"https://www.unnatimotor.com/"}
+  {id:2,name:"Unnati Motor",logo:"Unnatimotors.jpg",website:"https://www.unnatimotor.com/"},
+  
+  {id:3,name:"Supreme Solution",logo:"Supreme.jpg",website:"https://supremesolution.org.in/"}
 
  
 ];

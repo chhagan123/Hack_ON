@@ -40,7 +40,7 @@ const TechverseHackathon = () => {
         </ul>
       </div>
 
-      {/* Hackathon Domains */}
+    
       <div className="w-full max-w-4xl bg-gray-800 p-4 sm:p-6 rounded-xl shadow-lg mt-8">
         <h2 className="text-xl sm:text-2xl font-semibold text-blue-400">🌍 Hackathon Domains</h2>
         <ul className="mt-4 space-y-2 text-gray-300 text-sm sm:text-md">
