@@ -71,9 +71,7 @@ const TechverseHackathon = () => {
 
       {/* Registration Button */}
       <div className="mt-10">
-        <a href="https://forms.gle/Aubvq4mS49vUcuE88" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-6 py-3 rounded-lg shadow-lg transition block text-center">
-          🚀 Register Now
-        </a>
+       <button>Registration closed</button>
       </div>
 
       {/* Contact Coordinators */}
