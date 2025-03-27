@@ -12,7 +12,7 @@ const events = [ {
   venue: "TGPCET campus",
   date: "28th March",
   time: "9:00 AM - 4:00 PM",
-  registerLink:"https://forms.gle/Aubvq4mS49vUcuE88"
+  // registerLink:"https://forms.gle/Aubvq4mS49vUcuE88"
 },
 {
   id: 2,
@@ -173,7 +173,7 @@ const Upcoming = () => {
                     disabled
                     className="flex-1 bg-gray-200 text-gray-500 px-3 py-2 rounded-lg cursor-not-allowed text-sm font-semibold"
                   >
-                    Coming Soon
+                   Registartion closed
                   </button>
                 )}
               </div>
