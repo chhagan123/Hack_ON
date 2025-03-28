@@ -33,7 +33,7 @@ const ProblemStatements = ({ problems = [] }) => {
     features: [
       "Live book availability tracking",
       "Map-based library locator",
-      "QR code-based book reservations",
+  
     ],
   },
   {
@@ -55,7 +55,6 @@ const ProblemStatements = ({ problems = [] }) => {
     features: [
       "Real-time donor-recipient matching",
       "Emergency blood request alerts",
-      "Blood bank inventory management",
     ],
   },
   {
@@ -76,7 +75,6 @@ const ProblemStatements = ({ problems = [] }) => {
       "A system that allows students and employees to manage their mess subscriptions and reduce food waste.",
     features: [
       "Flexible meal subscription and cancellation",
-      "Automated payment and billing",
       "Real-time meal availability updates",
     ],
   },
@@ -100,7 +98,6 @@ const ProblemStatements = ({ problems = [] }) => {
       "AI-powered personalized diet recommendations",
       "Calorie and nutrient tracking",
       "Grocery shopping list based on diet plan",
-      "Integration with fitness apps for health monitoring",
     ],
   },
   {
@@ -122,7 +119,6 @@ const ProblemStatements = ({ problems = [] }) => {
     features: [
       "Understands hand movements using AI",
       "Instantly converts signs into speech",
-      "Supports multiple languages",
     ],
   },
   {
@@ -189,7 +185,7 @@ const ProblemStatements = ({ problems = [] }) => {
     features: [
       "Understands different subjects",
       "Provides step-by-step solutions",
-      "Works with voice and text input",
+      "Works with text input",
     ],
   },
   {
