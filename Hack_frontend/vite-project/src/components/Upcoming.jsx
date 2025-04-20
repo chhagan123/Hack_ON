@@ -25,8 +25,8 @@ const events = [ {
   venue: "TGPCET Campus",
   date: "29th March",
   time: "9:00 AM - 4:00 PM",
-  registerLink:
-    "https://forms.gle/FQ1y7L7nQoK75ZQY6",
+  // registerLink:
+  //   "https://forms.gle/FQ1y7L7nQoK75ZQY6",
 },
 {
   id: 3,
@@ -39,8 +39,8 @@ const events = [ {
   venue: "Data Science Department",
   date: "28th March",
   time: "9:00 AM - 4:00 PM",
-  registerLink:"https://forms.gle/x9t8waM5yNJdU6mC8"
-},
+//   registerLink:"https://forms.gle/x9t8waM5yNJdU6mC8"
+ },
 {
   id: 4,
   title: "AI vs Human Debate",
@@ -52,7 +52,7 @@ const events = [ {
   venue: "TGPCET campus",
   date: "28th March",
   time: "10:00 AM - 5:00 PM",
-  registerLink:"https://forms.gle/4Tcd9Qc8bKMBPyCS7"
+  // registerLink:"https://forms.gle/4Tcd9Qc8bKMBPyCS7"
 },
 {
   id: 5,
@@ -65,7 +65,7 @@ const events = [ {
   venue: "TGPCET campus",
   date: "29th March",
   time: "10:00 AM - 5:00 PM",
-  registerLink:"https://forms.gle/WgyCR1D46b6ewYBcA"
+  // registerLink:"https://forms.gle/WgyCR1D46b6ewYBcA"
 },
 {
   id: 6,
@@ -77,8 +77,8 @@ const events = [ {
   venue: "Mystery Room",
   date: "29 March",
   time: "10:00 Am - 4:00 PM",
-  registerLink: "https://forms.gle/7wNGM65ufrGzCVGJ7"
-}
+//   registerLink: "https://forms.gle/7wNGM65ufrGzCVGJ7"
+ }
 
 ];
 
